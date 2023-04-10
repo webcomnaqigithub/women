@@ -1,0 +1,22 @@
+{
+	"projectName": "theme2",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "theme2 CSS",
+		"file": "theme2.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/admin/jqadm/"
+		}]
+	}, {
+		"name": "theme2 JS",
+		"file": "theme2.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/admin/jqadm/"
+		}]
+	}],
+	"resources" : []
+}

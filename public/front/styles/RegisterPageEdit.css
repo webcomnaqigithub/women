@@ -1,0 +1,122 @@
+ div.containerPersonalImag {
+     display: flex;
+     justify-content: center;
+     padding: 10px;
+ }
+ 
+ div.containerPersonalImag .avatar-edit {
+     position: absolute;
+     right: 10px;
+     z-index: 1;
+     top: 0px;
+ }
+ 
+ div.containerPersonalImag .avatar-edit input {
+     display: none;
+ }
+ 
+ div.containerPersonalImag .avatar-edit input+label {
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     margin-bottom: 0;
+     border-radius: 100%;
+     background: #FFFFFF;
+     border: 1px solid transparent;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+     cursor: pointer;
+     font-weight: normal;
+     transition: all .2s ease-in-out;
+ }
+ 
+ div.containerPersonalImag .avatar-edit input+label:hover {
+     background: #f1f1f1;
+     border-color: #d6d6d6;
+ }
+ 
+ div.containerPersonalImag .avatar-edit input+label:after {
+     content: "\f040";
+     font-family: 'FontAwesome';
+     color: #757575;
+     position: absolute;
+     top: 7px;
+     left: 0;
+     right: -2px;
+     text-align: center;
+     margin: auto;
+ }
+ 
+ div.containerPersonalImag .avatar-preview {
+     width: 80px;
+     height: 80px;
+     position: relative;
+     border-radius: 100%;
+     border: 6px solid #F8F8F8;
+     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+ }
+ 
+ div.containerPersonalImag .avatar-preview>div {
+     width: 100%;
+     height: 100%;
+     border-radius: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ /* Personallllllllllll Photo  */
+ /* Personallllllllllll Photo  */
+ /* sShow the password  */
+ /* sShow the password icons  */
+ 
+ .field-icon {
+     float: left;
+     margin-left: 8px;
+     margin-top: -38px;
+     position: relative;
+     z-index: 2;
+ }
+ /* sShow the password  */
+ /* Register page Media */
+ 
+ @media only screen and (min-width: 992px) and (max-width: 1400px) {
+     div.Register-steps label {
+         position: fixed;
+         margin-top: -65px;
+         margin-right: -45px;
+     }
+     div#section1 img {
+         padding: 0 !important;
+     }
+     div#section2 img {
+         padding: 0 !important;
+     }
+     div.centered {
+         top: 250px;
+     }
+     div.centered div.row {
+         max-height: 450px;
+     }
+     div.Register-bg {
+         /* max-height: 450px; */
+         border-radius: 0px 0px 0px 12px;
+     }
+     div.containerPersonalImag {
+         padding: 0;
+         padding-top: 5px;
+     }
+     div.Register-input .mb-1 {
+         margin-bottom: 5px !important;
+     }
+     div.Register-input {
+         margin-top: 15px !important;
+     }
+     input#myCheck {
+         margin-top: -2px !important;
+     }
+     div.Create-account-input input {
+         margin-bottom: 11px;
+     }
+     div.Create-account-input label {
+         margin-bottom: 10px !important;
+     }
+ }

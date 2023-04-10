@@ -1,0 +1,8 @@
+<svg id="ruler" xmlns="http://www.w3.org/2000/svg" width="28.532" height="28.532" viewBox="0 0 28.532 28.532">
+  <path id="Vector" d="M3.567,11.888H20.21q3.567,0,3.567-3.567V3.567Q23.777,0,20.21,0H3.567Q0,0,0,3.567V8.322Q0,11.888,3.567,11.888Z" transform="translate(2.378 8.322)" fill="none" stroke="#262626" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="Vector-2" data-name="Vector" d="M0,0V5.944" transform="translate(21.399 8.322)" fill="none" stroke="#262626" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0V4.755" transform="translate(7.133 8.322)" fill="none" stroke="#262626" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="Vector-4" data-name="Vector" d="M.059,0,0,5.944" transform="translate(11.889 8.322)" fill="none" stroke="#262626" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="Vector-5" data-name="Vector" d="M0,0V3.567" transform="translate(16.644 8.322)" fill="none" stroke="#262626" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="Vector-6" data-name="Vector" d="M0,0H28.532V28.532H0Z" fill="none" opacity="0"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="tick" transform="translate(-748 -188)">
+    <path id="Vector" d="M10,20A10,10,0,1,0,0,10,10.029,10.029,0,0,0,10,20Z" transform="translate(750 190)" fill="none" stroke="#ec1c2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(748 188)" fill="none" opacity="0"/>
+  </g>
+  <g id="Group_10461" data-name="Group 10461" transform="translate(-748.021 -188)">
+    <path id="Path" d="M.88,1.75A.881.881,0,0,1,0,.87a.875.875,0,1,1,.88.88Z" transform="translate(759.13 202.926)" fill="#ec1c2e"/>
+    <path id="Path-2" data-name="Path" d="M0,.88A.888.888,0,0,1,.88,0a.88.88,0,0,1,.87.88V5.3A.875.875,0,0,1,0,5.3Z" transform="translate(759.12 195.325)" fill="#ec1c2e"/>
+  </g>
+</svg>

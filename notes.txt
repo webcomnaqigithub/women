@@ -1,0 +1,84 @@
+1- I made constant attributes for size attribute: 
+    2XL => 17
+    XL  => 18
+    L   => 19
+    M   => 20
+    S   => 21
+
+ ----------------------------------------------
+
+2- You have to add locale and currency combimation 'ar' 'ILS'.
+
+ ----------------------------------------------
+
+3- Remove all languages and currencies except 'en' and 'ar', 'USD' and 'ILS'.
+
+ ----------------------------------------------
+
+4- In marketplace home page, I made constant product categoreis:
+    bestseller_products  => category id number 2
+    best_offer_products  => category id number 13
+    featured_products    => category id number 14
+
+ ----------------------------------------------
+
+5- In marketplace, the categories (in the middel page) has been set as follow:
+    sub_categories (all)   => tree number 2
+
+    big one => category number 1
+    middel one => category number 2
+    two small left => category number 3,4
+    others => category number 1,2,3,4
+
+
+ ----------------------------------------------
+
+6- Config
+    SHOP_MULTILOCALE=true
+    SHOP_MULTISHOP=true
+    SHOP_REGISTRATION=true
+
+ ----------------------------------------------
+
+7- Untile now, you should to overwrite this function: 06/06/2022
+
+    vendor\aimeos\aimeos-laravel\src\helpers.php => airoute()
+        function airoute( $name, $parameters = [], $absolute = true )
+        {
+            if( $current = Route::current() )
+            {
+                $site = config( 'app.shop_multishop' ) ? config( 'shop.mshop.locale.site', 'default' ) : null;
+
+                //$parameters['site'] ??= $current->parameter( 'site', Request::get( 'site', $site ) );
+                $parameters['locale'] = $current->parameter( 'locale', Request::get( 'locale' ) ) ?? config('app.locale', 'ar');
+                $parameters['currency'] = $current->parameter( 'currency', Request::get( 'currency' ) );
+            }
+
+            return app( 'url' )->route( $name, array_filter( $parameters ), $absolute );
+        }
+
+
+
+-------------------------------------------------------------
+
+- Delivery statuses:
+    -1: default       في الانتظار
+    0: deleted
+    1: pending        
+    2: progress       قيد التجهيز
+    3: dispatched
+    4: delivered      تم التسليم
+    5: lost           لم استلم
+    6: refused        رفض
+    7: returned
+    8: prepared       تم التجهيز
+
+- Payment statues:
+    0: deleted
+    1: canceled
+    2: refused
+    3: refund
+    4: pending
+    5: authorized
+    6: received
+    7: transferred
